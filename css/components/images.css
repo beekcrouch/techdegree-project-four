@@ -1,29 +1,17 @@
-/* ============================================= */
-/*              Images                           */
-/* ============================================= */
-.img-avatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 100%;
-  max-height: 100%;
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 6 |     @include block-display;
+ *   |     ^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss/components/images.scss 6:5  root stylesheet */
 
-.img-frame {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 100%;
-  padding: 13px;
-  border: 1px solid #ccc;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 6 \2502      @include block-display;\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss/components/images.scss 6:5  root stylesheet";
 }
-
-.img-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*# sourceMappingURL=images.css.map */

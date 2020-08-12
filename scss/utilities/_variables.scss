@@ -1,8 +1,32 @@
-$base-color: #58e1c1; //teal
-$white: #fff; //white
-$link-color: #51ddfc;
-//$ : ;
-//$ : ;
+/* ============================================= */
+/*              Main Colors                      */
+/* ============================================= */
 
+$base-color: #58e1c1; //teal
+$secondary-color: #51ddfc; //blue
+$secondary-headline: #777; //grey
+$white: #fff; //white
+$error-color: #e4757a;
+
+/* ============================================= */
+/*              Media Query Variable             */
+/* ============================================= */
 /*$media query variable*/
 
+/* ============================================= */
+/*              Lighten Color Function           */
+/* ============================================= */
+
+
+
+/* ============================================= */
+/*              Button Color Map                 */
+/* ============================================= */
+
+$btn: (
+    'dft': $secondary-color,
+    'err': $error-color,
+    'info': #927bc1,
+    'suc': #63cc82,
+    'warn':  #fd7856,
+)
