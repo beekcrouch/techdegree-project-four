@@ -5,3 +5,4 @@ A Web Style Guide Project
 
 
 ## Struggles
+I am struggling with functions and the logic of them. Just need practice!

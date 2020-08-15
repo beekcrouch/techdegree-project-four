@@ -12,12 +12,13 @@
     border-radius: 5px;
   }
   
+
   .default {
     background-color: $secondary-color;
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: $error-color;
   }
   
   .info {

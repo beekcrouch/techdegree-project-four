@@ -6,27 +6,46 @@ $base-color: #58e1c1; //teal
 $secondary-color: #51ddfc; //blue
 $secondary-headline: #777; //grey
 $white: #fff; //white
-$error-color: #e4757a;
+
+/* BUTTON COLORS */
+$default-color: $secondary-color; //blue
+$error-color: #e4757a; //light red
+$info-color: #927bc1; //purple
+$success-color: #63cc82; //green
+$warning-color: #fd7856; //bright red
 
 /* ============================================= */
 /*              Media Query Variable             */
 /* ============================================= */
-/*$media query variable*/
+
+$breakpoint: 769px;
+
 
 /* ============================================= */
 /*              Lighten Color Function           */
 /* ============================================= */
 
 
+@each $btn, $color in $buttons {
+	.#{$btn} {
+		background-color: $color;
+		&:hover {
+			background-color: lighten($color, 30%);
+		}
+	}
+}
+
 
 /* ============================================= */
 /*              Button Color Map                 */
 /* ============================================= */
 
-$btn: (
-    'dft': $secondary-color,
-    'err': $error-color,
-    'info': #927bc1,
-    'suc': #63cc82,
-    'warn':  #fd7856,
-)
+$buttons: (
+	default: $default-color,
+	error: $error-color,
+	info: $info-color,
+	success: $success-color,
+	warning: $warning-color
+);
+
+    

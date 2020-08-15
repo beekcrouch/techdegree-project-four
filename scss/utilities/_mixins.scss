@@ -7,3 +7,22 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@mixin mq($break) {
+    @if $break == 'm' {
+        @media (max-width: $break-m) {
+            @content;
+        }
+    }
+}
+
+//@mixin btn-color($map) {
+//    @each $btn, $color in $map {
+//        &-${$btn} {
+//            background-color: $color;
+//            &:hover {
+//                background-color: lighten($color, 30%);
+//            }
+//        }
+//    }
+//}
