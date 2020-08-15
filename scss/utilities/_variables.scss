@@ -28,7 +28,7 @@ $breakpoint: 769px;
 
 @each $btn, $color in $buttons {
 	.#{$btn} {
-		background-color: $color;
+		background-color: {$color};
 		&:hover {
 			background-color: lighten($color, 30%);
 		}
