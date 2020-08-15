@@ -22,21 +22,6 @@ $breakpoint: 769px;
 
 
 /* ============================================= */
-/*              Lighten Color Function           */
-/* ============================================= */
-
-
-@each $btn, $color in $buttons {
-	.#{$btn} {
-		background-color: {$color};
-		&:hover {
-			background-color: lighten($color, 30%);
-		}
-	}
-}
-
-
-/* ============================================= */
 /*              Button Color Map                 */
 /* ============================================= */
 
@@ -47,5 +32,21 @@ $buttons: (
 	success: $success-color,
 	warning: $warning-color
 );
+
+/* ============================================= */
+/*              Lighten Color Function           */
+/* ============================================= */
+
+
+@each $btn, $color in $buttons {
+	.#{$btn} {
+		background-color: #{$color};
+		&:hover {
+			background-color: lighten($color, 30%);
+		}
+	}
+}
+
+
 
     
